@@ -13,8 +13,9 @@ export XDG_CONFIG_HOME="$TEST_HOME/.config"
 export OPENCODE_CONFIG_DIR="$TEST_HOME/.config/opencode"
 
 # Install plugin to test location
+# 注：本 fork 的 opencode 插件（superpowers.js）自包含、仅读取 ../../skills，
+# 不依赖上游的 lib/（fork 无此目录），故不拷 lib。
 mkdir -p "$HOME/.config/opencode/superpowers"
-cp -r "$REPO_ROOT/lib" "$HOME/.config/opencode/superpowers/"
 cp -r "$REPO_ROOT/skills" "$HOME/.config/opencode/superpowers/"
 
 # Copy plugin directory
