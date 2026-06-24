@@ -130,6 +130,14 @@ digraph skill_flow {
 
 中国特色技能与翻译技能**叠加使用**，不互斥。例如：做代码审查时，同时使用 requesting-code-review（流程）+ chinese-code-review（风格）。
 
+## AGENTS.md 维护
+
+项目开发任务完成后（5+ 步骤、踩坑、用户纠正、架构变化），检查项目根目录的 `AGENTS.md` 是否需要更新。
+
+**触发条件**：当前任务属于项目开发（有代码仓库、有开发目标）。日常对话/问答/非项目任务跳过。
+
+**完整规则**：见 `references/hermes-tools.md` 的「AGENTS.md 维护约定」章节。
+
 ## 技能类型
 
 **刚性的**（TDD、调试）：严格遵循。不要偏离纪律。
